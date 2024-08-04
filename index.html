@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laguna Wicie - Strona główna</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="top">
+    <div class="topDownBlur"></div>
+    <div class="topLeftBlur">
+        <div class="topText">
+            <h1 id="okok" style="margin: 0">Domki letniskowe nad morzem</h1>
+        </div>
+        <div class="flex topButtons">
+            <div id="topButtonL" onclick="document.getElementById('okk').scrollIntoView({behavior: 'smooth'});">
+                <p id="topButtonLText">Zarezerwuj</p>
+                <img style="margin-left: 10px; width: 13px; height: 23px" src="assets/images/arrow.png" alt="arrow">
+            </div>
+            <div class="animated fadeInUp" id="topButtonR" onclick="window.location = 'mailto:domkiwicie@onet.pl'">
+                <p id="topButtonRText">Kontakt</p>
+                <img style="margin-left: 10px; width: 23px; height: 23px" src="assets/images/drafts.png" alt="postcard">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="why">
+    <div class="whyHeader">
+        <h1 data-aos="fade-up" data-aos-duration="500" data-aos-offset="150">Dlaczego <span id="whyMy">my</span></h1>
+    </div>
+    <div id="about" class="whyContent">
+        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="150" data-aos-delay="50" id="box1" class="whyElement">
+            <div class="whyElementAnimate">
+                <img src="assets/images/bolt.png" alt="piorun">
+                <p class="whyText">Prąd w cenie</p>
+            </div>
+        </div>
+        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="150" data-aos-delay="100" id="box2" class="whyElement">
+            <div class="whyElementAnimate">
+                <img src="assets/images/local_parking.png" alt="p">
+                <p class="whyText">Darmowy parking</p>
+            </div>
+        </div>
+        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="150" data-aos-delay="200" id="box3" class="whyElement">
+            <div class="whyElementAnimate">
+                <img src="assets/images/fitness_center.png" alt="silownia">
+                <p class="whyText">Darmowa siłownia</p>
+            </div>
+        </div>
+        <div data-aos="fade" data-aos-duration="1000" data-aos-offset="150" data-aos-delay="250" id="box4" class="whyElement">
+            <div class="whyElementAnimate">
+                <img src="assets/images/location_city.png" alt="piorun">
+                <p class="whyText">Blisko do miasta</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about">
+    <div data-aos="fade" data-aos-duration="1000" data-aos-offset="150" class="aboutLeft"></div>
+    <div data-aos="fade" data-aos-duration="1000" data-aos-offset="150" class="aboutRight">
+        <h1 id="aboutHeader">O nas</h1>
+        <p id="aboutText">Zapraszamy na wypoczynek do nowych domków letniskowych wybudowanych w 2017r.
+            Domki znajdują się na oświetlonej i ogrodzonej posesji, na której znajduje się parking
+            dla samochodów. Posesja oddalona jest około 200m od morza (w linii prostej 100m od morza).
+            Wicie To Miejscowość Spokojna, Idealna Dla Rodzin Z Dziećmi. W Niedalekiej Odległości Do
+            Dyspozycji Gości Są Restauracje, Kawiarnie, Sklepy, Miejski Plac Zabaw, Las I Plaża.</p>
+        <div style="display: flex; justify-content: center;">
+            <button id="aboutButton">Wyposażenie domków</button>
+        </div>
+    </div>
+</div>
+<div class="location">
+    <div class="locationDetails">
+        <div class="locationTop">
+            <p data-aos="fade-down" data-aos-duration="1000" data-aos-offset="150" class="locationTopP">LOKALIZACJA & MAPA</p>
+            <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-offset="150" class="locationTopH"><span style="text-decoration: underline; text-decoration-color: #16C6BB">Wic</span>ie, Bosmańska 26</h1>
+        </div>
+        <div class="locationBottom">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="150" class="kodsad">
+                <h1 class="locationHeader">200m</h1>
+                <p class="locationTo">od morza</p>
+            </div>
+            <div id="okk" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="150" class="kodsad">
+                <h1 class="locationHeader">6km</h1>
+                <p class="locationTo">Jarosławiec</p>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade" data-aos-duration="1000" data-aos-offset="150" class="mapBackground">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d579.1064504102952!2d16.47113546465074!3d54.50835163429709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d5c98764eb6cd1a!2sDomki%20Letniskowe%20%22Laguna%22!5e0!3m2!1spl!2spl!4v1669569280691!5m2!1spl!2spl" width="100%" height="100%" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+<div class="terms" id="terms">
+    <div class="termsHeader">
+        <h1 data-aos="fade-up" data-aos-duration="500" data-aos-offset="150">Dostępne terminy</h1>
+    </div>
+    <div class="actualTerms">
+        <div class="termAnimation" data-aos="fade" data-aos-duration="1000" data-aos-offset="150" data-aos-delay="200">
+            <div class="term">
+                <div class="termsItemTop">
+                    <img src="assets/images/calendar_month.png" alt="kalendarz">
+                    <h1 style="margin-left: 20px">Czerwiec 2024</h1>
+                </div>
+                <div class="termsItemMid">
+                    <div class="tMidL">
+                        <p class="termsItemMidLeftHeader">Dostępne terminy</p>
+                        <p class="termsItemMidLeftDate"><s>22.06-29.06</s></p>
+                        <p class="termsItemMidLeftDate"><s>29.06-06.07</s></p>
+                    </div>
+                    <div class="tMidR">
+                        <p class="termsItemMidRightText">Brak miejsc</p>
+                        <p class="termsItemMidRightText">Brak miejsc</p>
+                    </div>
+                </div>
+                <button class="termsItemButton" onclick="window.location = 'booking.html'">Zarezerwuj teraz</button>
+            </div>
+        </div>
+        <div class="termAnimation" data-aos="fade" data-aos-duration="1000" data-aos-offset="150">
+            <div class="term">
+                <div class="termsItemTop">
+                    <img src="assets/images/calendar_month.png" alt="kalendarz">
+                    <h1 style="margin-left: 20px">Lipiec 2024</h1>
+                </div>
+                <div class="termsItemMid">
+                    <div class="tMidL">
+                        <p class="termsItemMidLeftHeader">Dostępne terminy</p>
+                        <p class="termsItemMidLeftDate">06.07-13.07</p>
+                        <p class="termsItemMidLeftDate">13.07-20.07</p>
+                        <p class="termsItemMidLeftDate">20.07-27.07</p>
+                        <p class="termsItemMidLeftDate">27.07-03.08</p>
+                    </div>
+                    <div class="tMidR">
+                        <p class="termsItemMidRightText" style="color: #57F287">4 domki</p>
+                        <p class="termsItemMidRightText" style="color: #57F287">4 domki</p>
+                        <p class="termsItemMidRightText">Brak miejsc</p>
+                        <p class="termsItemMidRightText" style="color: #ED4245">1 domkek</p>
+                    </div>
+                </div>
+                <button class="termsItemButton" onclick="window.location = 'booking.html'">Zarezerwuj teraz</button>
+            </div>
+        </div>
+        <div class="termAnimation" data-aos="fade" data-aos-duration="1000" data-aos-offset="150" data-aos-delay="200">
+            <div class="term">
+                <div class="termsItemTop">
+                    <img src="assets/images/calendar_month.png" alt="kalendarz">
+                    <h1 style="margin-left: 20px">Sierpień 2024</h1>
+                </div>
+                <div class="termsItemMid">
+                    <div class="tMidL">
+                        <p class="termsItemMidLeftHeader">Dostępne terminy</p>
+                        <p class="termsItemMidLeftDate">03.08-10.08</p>
+                        <p class="termsItemMidLeftDate"><s>10.08-17.08</s></p>
+                        <p class="termsItemMidLeftDate"><s>17.08-24.08</s></p>
+                        <p class="termsItemMidLeftDate"><s>24.08-31.08</s></p>
+                    </div>
+                    <div class="tMidR">
+                        <p class="termsItemMidRightText" style="color: #ED4245">2 domki</p>
+                        <p class="termsItemMidRightText">Brak miejsc</p>
+                        <p class="termsItemMidRightText">Brak miejsc</p>
+                        <p class="termsItemMidRightText">Brak miejsc</p>
+                    </div>
+                </div>
+                <button class="termsItemButton" onclick="window.location = 'booking.html'">Zarezerwuj teraz</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="booking" id="booking">
+    <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-offset="50" class="bookingHeader">Zarejezerwuj już <a href="booking.html" class="bookingSpan">teraz</a>!</h1>
+    <p data-aos-delay="50" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="50" class="bookingText">Śpiesz się z rezerwacją, niedługo wszystko Będzie zajęte. Pytania? Dzwoń: <b>501077778</b></p>
+    <div data-aos-delay="100" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="50">
+        <button class="bookingButton" onclick="window.location = 'booking.html'">Zarezerwuj teraz</button>
+    </div>
+</div>
+<div data-aos="fade" data-aos-duration="700" data-aos-easing="ease-out" data-aos-offset="-10" class="footer">
+    <div class="footerLeft">
+        <img style="margin-left: 10px" class="footerLItem" src="assets/images/logo.png" alt="logo">
+        <div style="flex-direction: column;justify-content: center" class="flex footerLItem">
+            <p id="footerLaguna">Laguna Wicie</p>
+            <p id="footerStreet">ul. Bosmańska 26</p>
+        </div>
+        <div class="footerLItem footerButtons">
+            <a class="footerButton" href="rules.html">Regulamin</a>
+            <a class="footerButton" onclick="window.location = 'mailto:domkiwicie@onet.pl'">Kontakt</a>
+            <a class="footerButton" href="faq.html">FAQ</a>
+        </div>
+    </div>
+    <div class="footerRight">
+        <p class="footerRItem"><a class="footerRLink" href="./"></a></p>
+        <p class="footerRItem">Projekt strony: <a class="footerRLink" href="https://www.titondesign.xyz">titondesign.xyz</a></p>
+        <p class="footerRItem"><a class="footerRLink" href="./"></a></p>
+    </div>
+</div>
+<div id="alert" class="alert">
+    <div class="alertContent">
+	<p style="margin: 0;">W tym roku na Naszych Klientów czeka <b>nowy Plac Zabaw</b> -> <a href="./gallery.html">Galeria</a></p>
+    </div>
+    <div class="alertClose" onclick="closing()">
+        <p id="close">x</p>
+    </div>
+</div>
+<div class="flex nav">
+    <div class="navLogo">
+        <a href="index.html"><img id="logo" src="assets/images/logo.png" alt="logo XD"></a>
+    </div>
+    <div class="navButtons">
+        <a id="home" href="index.html">Główna</a>
+        <a id="aboutHref" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">O nas</a>
+        <a id="gallery" href="gallery.html">Galeria</a>
+        <button id="reservation" onclick="document.getElementById('okk').scrollIntoView({behavior: 'smooth'});">Rezerwacja</button>
+        <a href="./login" target="_blank" id="login"><i class="fa-solid fa-right-to-bracket"></i></a>
+    </div>
+</div>
+<div id="loader" class="loaderWrapper">
+    <h1 id="loaderHeader">Witamy!</h1>
+    <div id="loaderAnimation">
+        <span class="loader"><span class="loaderInner"></span></span>
+    </div>
+</div>
+</body>
+<script src="assets/js/closing.js" type="text/javascript"></script>
+<script src="assets/js/loaderHome.js"></script>
+<script src="https://kit.fontawesome.com/f3a03cc7ad.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        easing: "ease-in-out-back",
+        delay: "0",
+        once: true
+    });
+</script>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laguna Wicie - Rezerwacja</title>
+    <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/booking.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="blur"></div>
+<div class="booking">
+    <div class="upHouse">
+        <h1 class="hhha">Złóż rezerwację</h1>
+        <form action="./" class="form">
+            <div id="okok1" class="okok">
+                <label class="okLabel" for="dateStart">Od</label>
+                <input onchange="update()" class="ok" type="date" value="2024-07-06" min="2024-07-03" max="2024-08-24" required name="dateStart" id="dateStart">
+            </div>
+            <div class="okok">
+                <label class="okLabel" for="dateEnd">Do</label>
+                <input onchange="update()" class="ok" type="date" value="2024-07-13" min="2024-07-13" max="2024-08-31" required name="dateEnd" id="dateEnd">
+            </div>
+            <div class="okok">
+                <label class="okLabel" for="numberGuests">Liczba gości</label>
+                <input onchange="update()" class="ok" value="4" min="1" max="7" type="number" name="numberGuests" id="numberGuests">
+            </div>
+        </form>
+        <br>
+        <p class="alertt" id="alertPrice"></p>
+    </div>
+    <div class="house">
+        <div style="width: 535px; margin: 0">
+            <div class="actualHouse">
+                <div class="houseBlur">
+                    <h1 class="houseHeader">Domek letniskowy</h1>
+                    <p id="toUpdate" class="houseText">2024-07-06 do 2024-07-13 • 4 gości</p>
+                </div>
+            </div>
+            <div class="houseButton" onclick="book()">
+                <div class="houseButtonTextL">
+                    <p style="margin: 0">Zarezerwuj teraz</p>
+                </div>
+                <div class="houseButtonTextR">
+                    <p style="margin: 0" id="priceUpdate">----zł</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="terms" id="terms">
+    <div class="actualTerms">
+        <div class="termAnimation" data-aos="fade" data-aos-duration="1000" data-aos-offset="150" data-aos-delay="200">
+            <div class="term">
+                <div class="termsItemTop">
+                    <img src="assets/images/calendar_month.png" alt="kalendarz">
+                    <h1 style="margin-left: 20px">Czerwiec 2024</h1>
+                </div>
+                <div class="termsItemMid">
+                    <div class="tMidL">
+                        <p class="termsItemMidLeftHeader">Dostępne terminy</p>
+                        <p class="termsItemMidLeftDate"><s>22.06-29.06</s></p>
+                        <p class="termsItemMidLeftDate"><s>29.06-06.07</s></p>
+                    </div>
+                    <div class="tMidR">
+                        <p class="termsItemMidRightText">Brak miejsc</p>
+                        <p class="termsItemMidRightText">Brak miejsc</p>
+                    </div>
+                </div>
+                <button class="termsItemButton" onclick="window.location = 'booking.html'">Zarezerwuj teraz</button>
+            </div>
+        </div>
+        <div class="termAnimation" data-aos="fade" data-aos-duration="1000" data-aos-offset="150">
+            <div class="term">
+                <div class="termsItemTop">
+                    <img src="assets/images/calendar_month.png" alt="kalendarz">
+                    <h1 style="margin-left: 20px">Lipiec 2024</h1>
+                </div>
+                <div class="termsItemMid">
+                    <div class="tMidL">
+                        <p class="termsItemMidLeftHeader">Dostępne terminy</p>
+                        <p class="termsItemMidLeftDate">06.07-13.07</p>
+                        <p class="termsItemMidLeftDate">13.07-20.07</p>
+                        <p class="termsItemMidLeftDate">20.07-27.07</p>
+                        <p class="termsItemMidLeftDate">27.07-03.08</p>
+                    </div>
+                    <div class="tMidR">
+                        <p class="termsItemMidRightText" style="color: #57F287">4 domki</p>
+                        <p class="termsItemMidRightText" style="color: #57F287">4 domki</p>
+                        <p class="termsItemMidRightText">Brak miejsc</p>
+                        <p class="termsItemMidRightText" style="color: #ED4245">1 domkek</p>
+                    </div>
+                </div>
+                <button class="termsItemButton" onclick="window.location = 'booking.html'">Zarezerwuj teraz</button>
+            </div>
+        </div>
+        <div class="termAnimation" data-aos="fade" data-aos-duration="1000" data-aos-offset="150" data-aos-delay="200">
+            <div class="term">
+                <div class="termsItemTop">
+                    <img src="assets/images/calendar_month.png" alt="kalendarz">
+                    <h1 style="margin-left: 20px">Sierpień 2024</h1>
+                </div>
+                <div class="termsItemMid">
+                    <div class="tMidL">
+                        <p class="termsItemMidLeftHeader">Dostępne terminy</p>
+                        <p class="termsItemMidLeftDate">03.08-10.08</p>
+                        <p class="termsItemMidLeftDate"><s>10.08-17.08</s></p>
+                        <p class="termsItemMidLeftDate"><s>17.08-24.08</s></p>
+                        <p class="termsItemMidLeftDate"><s>24.08-31.08</s></p>
+                    </div>
+                    <div class="tMidR">
+                        <p class="termsItemMidRightText" style="color: #ED4245">2 domki</p>
+                        <p class="termsItemMidRightText">Brak miejsc</p>
+                        <p class="termsItemMidRightText">Brak miejsc</p>
+                        <p class="termsItemMidRightText">Brak miejsc</p>
+                    </div>
+                </div>
+                <button class="termsItemButton" onclick="window.location = 'booking.html'">Zarezerwuj teraz</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-aos="fade" data-aos-duration="700" data-aos-easing="ease-out" data-aos-offset="0" class="footer">
+    <div class="footerLeft">
+        <img style="margin-left: 10px" class="footerLItem" src="assets/images/logo.png" alt="logo">
+        <div style="flex-direction: column;justify-content: center" class="flex footerLItem">
+            <p id="footerLaguna">Laguna Wicie</p>
+            <p id="footerStreet">ul. Bosmańska 26</p>
+        </div>
+        <div class="footerLItem footerButtons">
+            <a class="footerButton" href="rules.html">Regulamin</a>
+            <a class="footerButton" style="cursor: pointer" onclick="window.location = 'mailto:domkiwicie@onet.pl'">Kontakt</a>
+            <a class="footerButton" href="faq.html">FAQ</a>
+        </div>
+    </div>
+    <div class="footerRight">
+        <p class="footerRItem"><a class="footerRLink" href="./"></a></p>
+        <p class="footerRItem">Projekt strony: <a class="footerRLink" href="https://www.titondesign.xyz">titondesign.xyz</a></p>
+        <p class="footerRItem"><a class="footerRLink" href="./"></a></p>
+    </div>
+</div>
+<div id="alert" class="alert">
+    <div class="alertContent">
+        <p style="margin: 0;">W tym roku na Naszych Klientów czeka <b>nowy Plac Zabaw</b> -> <a href="./gallery.html">Galeria</a></p>
+    </div>
+    <div class="alertClose" onclick="closing()">
+        <p id="close">x</p>
+    </div>
+</div>
+<div class="flex nav">
+    <div class="navLogo">
+        <a href="index.html"><img id="logo" src="assets/images/logo.png" alt="logo XD"></a>
+    </div>
+    <div class="navButtons">
+        <a id="home" href="index.html">Główna</a>
+        <a id="aboutHref" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">O nas</a>
+        <a id="gallery" href="gallery.html">Galeria</a>
+        <button id="reservation" onclick="document.getElementById('okk').scrollIntoView({behavior: 'smooth'});">Rezerwacja</button>
+    </div>
+</div>
+<div id="loader" class="loaderWrapper">
+    <span class="loader"><span class="loaderInner"></span></span>
+</div>
+</body>
+<script src="assets/js/loader.js"></script>
+<script src="assets/js/closing.js" type="text/javascript"></script>
+<script src="assets/js/collapsible.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="assets/js/booking.js" type="text/javascript"></script>
+<script>
+    AOS.init({
+        easing: "ease-in-out-back",
+        delay: "0",
+        once: true
+    });
+</script>
+</html>
