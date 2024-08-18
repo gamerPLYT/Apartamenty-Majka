@@ -1,9 +1,12 @@
+:root {
+    main-color: #FFC555
+
+}
+
 body{
     margin: 0;
-
     font-family: 'DM Sans', sans-serif;
-
-    background: #0B0B0C;
+    background: main-color;
 }
 #navLogo{
     width: 84px;
